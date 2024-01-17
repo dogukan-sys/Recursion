@@ -23,6 +23,6 @@ function mergeSort(arr) {
   return merge(mergeSort(left), mergeSort(right));
 }
 
-const arr = [105, 79, 100, 110];
+const reuslt = mergeSort([105, 79, 100, 110]);
 
-console.log(mergeSort(arr));
+console.log(result);
