@@ -3,12 +3,10 @@
 
 function multiples(num) {
   if (num === 0) return num;
-  if (num % 3 == 0 || num % 5 == 0) {
-    return num + multiples(num - 1);
-  } else {
-    return multiples(num - 1);
-  }
+  return num % 3 == 0 || num % 5 == 0
+    ? num + multiples(num - 1)
+    : multiples(num - 1);
 }
 
-const result = multiples(1000);
+const result = multiples(10);
 console.log(result);
